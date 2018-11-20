@@ -19,10 +19,10 @@ namespace App1.ViewModels
             get { return clickModel.Clicks.ToString(); }
         }
 
-        public MainPageViewModel()
+        public MainPageViewModel(IClickModel clickModel)
         {
             ClickCommand = new Command(OnButtonClick);
-            clickModel = new ClickModel();
+            this.clickModel = clickModel;
         }
 
         private void OnButtonClick()

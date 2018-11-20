@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using App1.UWP.IoC;
 
 namespace App1.UWP
 {
@@ -21,7 +22,7 @@ namespace App1.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new App1.App());
+            LoadApplication(new App1.App(new PlatformModule()));
         }
     }
 }

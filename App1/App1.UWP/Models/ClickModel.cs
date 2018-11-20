@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace App1.Models
+using App1.Models;
+
+namespace App1.UWP.Models
 {
     class ClickModel : IClickModel
     {

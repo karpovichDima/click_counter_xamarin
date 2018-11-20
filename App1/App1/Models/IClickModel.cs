@@ -4,7 +4,7 @@ using System.Text;
 
 namespace App1.Models
 {
-    interface IClickModel
+    public interface IClickModel
     {
         void OnClick();
 
